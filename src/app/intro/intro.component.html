@@ -1,29 +1,46 @@
 <div class="fondo">
-  <div class="container-fluid">
-   <div class="row">
-    <div class="col-md-12">
-      <nav class="nav2 fixed-top">
-        <button class="primero" mat-button>Martin Ramirez.</button>
-        <button class="segundo" mat-button>INTRO</button>
-        <button (click)="scrollHaciaaboutme();" class="tercero" mat-button>ABOUT ME</button>
-        <button class="cuarto" mat-button>SKILLS</button>
-        <button class="quinto" mat-button>CONTACT</button>
-      </nav>
+  <nav class="navbar fixed-top navbar-expand-lg bg-black">
+    <div class="container-fluid">
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="primero" (click)="scrollHaciaintro()" mat-button>Martin Ramirez.</button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="segundo" (click)="scrollHaciaintro()" mat-button>INTRO</button>
+          </li>
+          <li class="nav-item">
+            <button class="tercero" (click)="scrollHaciaaboutme()" mat-button>ABOUT ME</button>
+          </li>
+          <li class="nav-item">
+            <button class="cuarto" (click)="scrollHaciaskills()" mat-button>SKILLS</button>
+          </li>
+          <li class="nav-item">
+            <button class="quinto" (click)="scrollHaciacontact()" mat-button>CONTACT</button>
+          </li>
+        </ul>
+      </div>
     </div>
-   </div>
+  </nav>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 animate__animated animate__fadeInLeftBig">
-        <p class="infoperfil fs-4">Hello, I'm Martin Ramirez</p>
-        <br>
-        <p class="infoperfil2">Naval Worker</p>
-        <br>
-        <p class="infoperfil3">and Web Developer</p>
-        <br>
-        <p class="SFM fw-normal">SCROLL FOR MORE------- </p>
+      <div class="col-md-6 animate__animated animate__fadeInLeftBig text-end">
+
+        <div class="infoperfil fs-4">Hello, I'm Martin Ramirez</div>
+
+        <div class="infoperfil2 text-nowrap"> Naval Worker</div>
+
+        <div class="infoperfil3 text-nowrap"> and Web Developer</div>
+
+        <p class="SFM fw-bold text-center">SCROLL FOR MORE------- </p>
+
       </div>
       <div class="col-md-6 animate__animated animate__fadeInRightBig">
         <img src="../assets/perfil editada.jpg" class="fotoperfil" alt="">
       </div>
     </div>
   </div>
-</div>
+
+

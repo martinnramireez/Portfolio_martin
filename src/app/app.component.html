@@ -2,7 +2,7 @@
 
 
 <div #seccionintro>
-  <app-intro> [seccionintro]="seccionintro" [seccionaboutme]="seccionaboutme"</app-intro>
+  <app-intro [seccionintro]="seccionintro" [seccionaboutme]="seccionaboutme" [seccionskills]="seccionskills" [seccioncontact]="seccioncontact"> </app-intro>
 </div>
 
 
@@ -16,38 +16,8 @@
 </div>
 
 
+<div #seccioncontact>
 <app-contact></app-contact>
-<div class="container-fluid text-center">
-  <form  [formGroup]="formularioDeContacto" (ngSubmit)="alEnviarMensaje()">
-    <div class="row">
-      <div class="col-md-12 text-center animate__animated animate__fadeInUp">
-        <p class="contactocontacto text-center fw-bold">CONTACT</p>
-        <mat-form-field class="form text-center" appearance="fill">
-          <mat-label class="campo1">Nombre</mat-label>
-          <input matInput type="text" formControlName="nombre">
-        </mat-form-field>
-        <div *ngIf="formularioDeContacto.controls.nombre.errors" class="textform fw-bold">
-          <div *ngIf="formularioDeContacto.controls.nombre.errors.required">A Name is needed.</div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center animate__animated animate__fadeInUp">
-        <mat-form-field class="form2 text-center" appearance="fill">
-          <mat-label class="mensajecampo">Mensaje</mat-label>
-          <input matInput type="text" formControlName="mensaje">
-        </mat-form-field>
-        <div *ngIf="formularioDeContacto.controls.mensaje.errors" class="textform2 fw-bold ">
-          <div *ngIf="formularioDeContacto.controls.mensaje.errors.required">Write your message.</div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <button mat-raised-button type="submit" class="botonsubmit fw-light animate__animated animate__fadeInUp">Send Message</button>
-      </div>
-    </div>
-  </form>
 </div>
+
 

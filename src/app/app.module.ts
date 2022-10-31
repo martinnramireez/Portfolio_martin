@@ -16,6 +16,7 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ContactComponent } from './contact/contact.component';
     MatProgressBarModule,
     MatFormFieldModule,
     FormsModule,
+    MatInputModule,
     ReactiveFormsModule
   ],
   providers: [],

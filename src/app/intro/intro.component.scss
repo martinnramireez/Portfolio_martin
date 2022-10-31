@@ -38,8 +38,8 @@
 
 .SFM{
   color: white;
-  margin-left: 36%;
-  margin-top: 300px;
+  margin-left: 5%;
+  margin-top: 302px;
   opacity: 50%;
 }
 
@@ -55,30 +55,35 @@
 .fotoperfil{
   opacity: 75%;
   width: 450px;
-  height: 706px;
+  height: 500px;
   margin-left:0px;
-  margin-top: 218px;
+  margin-top: 110px;
   border-radius: 10%;
 }
 
 .infoperfil{
   color: #cf1767;
-  margin-left: 35%;
-  margin-top: 39%;
+
+  padding-right: 29%;
+  margin-top: 30%;
+
 }
 
 .infoperfil2{
+
   color: white;
-  margin-left:35% ;
-  margin-top: 2%;
-  font-size: 500%;
+  padding-right: 25% ;
+ /*    padding-left: 34%; */
+    font-size: 50px;
+    margin-top: 3%;
 }
 
 .infoperfil3{
+  padding-right: 5%;
   color: white;
-  margin-top: 4%;
-  margin-left: 35%;
-  font-size: 500%;
+  margin-top: 5%;
+/*   padding-left: 34%; */
+  font-size: 50px;
 }
 
 .ambutton{
@@ -250,7 +255,7 @@ margin-right: 15px;
 
 .segundo{
   opacity: 30%;
-  margin-left: 395px;
+  margin-left: 120px;
   margin-right: 20px;
   color: white;
   font-size: 150%;
@@ -276,3 +281,5 @@ margin-right: 15px;
   color: white;
   font-size: 150%;
 }
+
+
